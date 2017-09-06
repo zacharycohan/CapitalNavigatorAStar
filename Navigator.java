@@ -105,6 +105,10 @@ public class Navigator {
                 System.out.println("Default File Not Located (US-Capitals.geo)");
             }
         }
+        System.out.println("Please enter two capital cities in the following format: Capital one-Capital Two");
+        System.out.println("Spelling matters, do not forget to capitalize! Do not include a whitespace around the hyphen");
+        System.out.println("(I.e. Bismarck-Des Moines)");
+        System.out.println("To exit the program, simply press \"enter\" without typing any input");
         cities = new HashMap();
         while (in.hasNextLine()) {
             //get the next line, break it up, add a new city to the hash table based on the stats from the file
@@ -157,7 +161,7 @@ public class Navigator {
 //            if(cities.get("Albany").compareTo(cities.get("Sacramento")) < 1)
 //                System.out.println(cities.get("Albany").toString());
 //            else
-//                System.out.println(cities.get("Sacramento").toString());  
+//                System.out.println(cities.get("Sacramento").toString());
             if (input.equals(EXIT)) {
                 break;
             }
